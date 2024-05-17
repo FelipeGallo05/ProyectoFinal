@@ -1,0 +1,71 @@
+.hero-content{
+    div{
+        .h1-misc{
+        font-family:"Helvetica", sans-serif;
+        font-weight: 1000;
+        font-style: none;
+        color:  rgb(248, 128, 30);
+        background-color: #2e2e2e85;
+        border-radius: 10px;
+        }
+    }
+}
+
+.carousel{
+    margin-top: 50px;
+    padding: 20px;
+    .carousel-item{
+        height: 500px;
+        .carousel-caption{
+            opacity: 0;
+            transition: 2s;
+        }
+        img{
+            transition: 1s;
+            @include img(100%,100%, contain)
+        }
+        button{
+            margin: 0;
+            box-sizing: border-box;
+            padding: 6px;
+            background-color: #686868;
+            border-radius: 5px;
+            margin-left: 30px;
+            a{
+                color: white;
+                text-decoration: none;
+            }
+            }   
+        iframe{
+            border-radius: 20px;
+            height: 100px;
+            width: auto;
+        }
+        
+    }
+    &:hover{
+        .carousel-caption{
+            opacity: 1;
+            height: auto;
+            padding: 5px;
+            width: auto;
+        }
+        .carousel-item{
+            img{
+                filter: blur(2px);
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .carousel-item iframe{
+        width: 100%;
+        height: 110px;
+    }
+}
+
+.bg-carousel{
+    background-color: #000000b3;
+    border-radius: 5px;
+}

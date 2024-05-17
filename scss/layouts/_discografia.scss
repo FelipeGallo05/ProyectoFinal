@@ -1,0 +1,96 @@
+.discografia{
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+    height: auto;
+    transition: 2s;
+    article{
+        &:hover{
+            transform: scale(1.04);
+
+        }
+        transition: 2s;
+        border-radius: 12px;
+        height: auto;
+        z-index: 3;
+        .albums-content{
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            h2{
+                font-size: 35px;
+                width: 300px ;
+                color: rgb(233, 233, 233);
+            }
+            p{
+                width: 300px;
+                margin-top: 10px;
+                color: rgb(255, 255, 255);
+            }
+        }
+    }
+    .TCD{
+        background-color: #7e1b1b;
+    }
+    
+    .Ye{
+        background-color:  #00193c;
+    }
+    
+    .KSG{
+        background-color: #005edada ;
+    }
+    
+    .Late-registration{
+        background-color: #353333;
+    }
+    
+    #VulturesDisc{
+        background-color: #402b2b;
+    }
+    
+    .MBDTF{
+        background-color:#e2193e ;
+    }
+    
+    .TLOP{
+        background-color: #ff7e3d;
+    }
+    
+    .Yeezus{
+        background-color: #6989c1;
+    }
+    
+    .WTT{
+        background-color: #8e7f42;
+    }
+    
+    .Donda{
+        background-color: rgb(45, 45, 45);
+    }
+    
+    .Heartbreak{
+        background-color: #829393;
+    }
+    
+    .Jesus-is-king{
+        background-color: blue;}
+    .graduation{
+        background-color: #b25186;
+    }
+}
+
+@media (max-width: 768px){
+    .albums-content p{
+        margin: 5px;
+    }
+    .albums-content{
+        gap: 0;
+    }
+    
+}

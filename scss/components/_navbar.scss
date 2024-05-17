@@ -1,0 +1,43 @@
+.navbar{
+    background-color: $ind-color;
+    font-family: "Helvetica", cursive;
+    color: black;
+    z-index: 1000;
+    .navbar-brand{
+        text-decoration: none;
+        color: black;
+        font-weight: 1000;
+        font-size: 1.2rem;
+        transition: 1s;
+            &:hover{
+                color: white;
+                transform: scale(1.01);
+            }
+    }
+    .nav-item{
+        list-style: none;
+        .nav-link{
+            text-decoration: none;
+            list-style:none;
+            color: black;
+            font-weight: 750;
+            font-size: 16px;
+            padding: 10px;
+            transition: 1s;
+            &:hover{
+                color: white;
+                transform: scale(1.01);
+            }
+        }
+    }
+
+}
+
+.nav-disc{
+    background-color: #cb6361eb;
+}
+
+.bg-misc{
+    background-color:  rgba(248, 128, 30, 0.812);
+}
+

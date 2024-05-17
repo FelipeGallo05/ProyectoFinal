@@ -1,0 +1,93 @@
+.contactos{
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        width: 310px;
+        background-color: #49494983;
+        position: relative;
+        border-radius: 12px;
+        margin-top: 100px;
+        height: auto;
+        padding: 10px;
+        .contacto-content{
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: flex-start;
+            height: 400px;
+            h2{
+                color: rgb(41, 40, 40);
+                text-align: start;
+                font-size: 24px;
+            }
+            form{
+                font-weight: 500;
+                font-family: Helvetica, sans-serif;
+                color: #222222;
+                font-size: 15px;
+                height: 100%;
+                width: auto;
+                label{
+                    color: rgb(41, 40, 40);
+                    text-align: start;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    .contacto-map{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        background-color: #49494983;
+        position: relative;
+        border-radius: 12px;
+        margin-top: 100px;
+        overflow: hidden;
+        height: 300px;
+        padding: 20px;
+        iframe{
+            height: 200px;
+            width: 100%;
+            padding: 2px;
+        }
+    }
+    .contacto-redes{
+        display: flex;
+        flex-direction: column;
+        width: auto ;
+        background-color: #49494983;
+        position: relative;
+        border-radius: 12px;
+        margin-top: 100px;
+        overflow: hidden;
+        height: 300px;
+        padding: 20px;
+        ul{
+            li{
+                margin-top: 30px;
+                margin-left: 10px;
+                font-family: "Helvetica", cursive;
+                font-weight: 500;
+                color: #222222;
+                font-size: 15px;
+                span{
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .contactos {
+        justify-content: center;
+    }
+}
